@@ -1,0 +1,24 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Dossier de build
+dist/
+build/
+
+# Dépendances locales
+.DS_Store
+
+# Environnement
+.env
+
+# Fichiers de test de couverture
+coverage/
+
+# Fichiers Docker
+docker-compose.override.yml
+docker-compose.override.*
