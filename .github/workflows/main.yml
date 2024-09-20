@@ -35,8 +35,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
       - name: Build Docker image
-        run: docker build -t mon-app-node .
+        run: docker build -t indratp/mon-app-node .
       - name: Login to DockerHub
         run: echo "${{ secrets.DOCKERHUB_PASSWORD }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
       - name: Push Docker image to DockerHub
-        run: docker push mon-app-node
+        run: docker push indratp/mon-app-node
